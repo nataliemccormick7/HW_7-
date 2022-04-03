@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock%}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ pageTitle }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
 </head>
-<body>
-    <div>
-        <h1>Welcome to Software Design</h1>
-        <hr>
-        <br>
-        
-        {% block body %}
+      <div id="menubar">
 
-        {% endblock %}
+      <nav>
+      
+      <ul id="navlist">
+      <li> <a id="homenav" href="./"> Home </a> </li>
+      <li> <a id="about" href="./about"> About </a> </li>
+      <li> <a id="estimate" href="./estimate"> Estimate </a> </li>
+    
+      </ul>
+      </nav>
+      </div>   
+  <body>
 
-    </div>
-</body>
+      {% block body %}
+    
+      
+	  {% endblock %}
+
+ </body>
+ 
 </html>
