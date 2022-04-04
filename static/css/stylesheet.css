@@ -1,25 +1,47 @@
 body {
-    background-color: white;
-  }
-  
-  ul#navlist {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 1px;
-  }
-  
-  
-  
-  #navlist li {
-    display: block ;
-    float: left;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Times New Roman";
-    padding: 20px;
-  }
-  
-  
-  
-  .picture {bottom: 0;
-  }
+  background-color: white;
+}
+
+ul#navlist {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1px;
+  position: static
+}
+
+#navlist a {
+  padding: 10px 10px;
+}
+
+#navlist a:link, #navlist a:visited {
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+}
+
+#navlist a:hover {
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+}
+
+
+#navlist li {
+  display: block ;
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  color:white
+  font-family: "Times New Roman";
+  padding: 20px;
+}
+
+#menubar {
+  background-color: gray;
+  width: 100%;
+  overflow: hidden;
+  clear:both
+}
+
+.picture {bottom: 0;
+}
