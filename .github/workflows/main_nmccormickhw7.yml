@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'nmccormickHW7'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_42310A88B1644F3384A0EC749C2A4402 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_29385BB41F4B4BF2991D7D4DC026C574 }}
