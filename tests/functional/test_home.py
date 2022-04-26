@@ -55,4 +55,4 @@ def test_estimate_functionality(app, client):
         calc_estimate = {"tank_radius":"180", "tank_height":"360"} 
         res = test_client.post('/estimate', data=calc_estimate)
         assert res.status_code == 200 
-        assert b"141371.67" in res.data # may need adjusted depending on current year
+        assert b"141300.0" in res.data # may need adjusted depending on current year
